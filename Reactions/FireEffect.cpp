@@ -6,3 +6,8 @@
 //
 
 #include "FireEffect.hpp"
+
+void FireEffect::apply(Character& target){
+    std::cout << "🔥 " << name() << " hits " << target.getName() << " for " << damage << " fire damage!\n";
+    target.getStats().takeDamage(damage);
+}

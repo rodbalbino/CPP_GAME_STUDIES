@@ -5,9 +5,19 @@
 //  Created by Rodrigo Balbino on 5/5/25.
 //
 
-#ifndef Equipment_hpp
-#define Equipment_hpp
+#ifndef EQUIPAMENT_H
+#define EQUIPAMENT_H
 
-#include <stdio.h>
+#include <string>
+
+class Equipament {
+    
+public:
+    std::string name;
+    int attackBonus;
+    int defenseBonus;
+    
+    Equipament(const std::string& n, int atk, int def);
+};
 
 #endif /* Equipment_hpp */
