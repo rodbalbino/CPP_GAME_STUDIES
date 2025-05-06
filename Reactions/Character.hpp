@@ -28,6 +28,7 @@ public:
     void equip(std::shared_ptr<Equipament> item);
     void attack(Character& target);
     void showStatus() const;
+    bool isAlive() const;
 };
 
 #endif /* Character_hpp */

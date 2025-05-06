@@ -35,6 +35,10 @@ void Character::showStatus() const {
     std::cout << "Defense: " << stats.getDefense() << ":\n";
 }
 
+bool Character::isAlive() const {
+    return stats.getHealth() > 0;
+}
+
 const std::string& Character::getName() const {
     return name;
 }
